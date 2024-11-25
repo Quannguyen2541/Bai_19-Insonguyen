@@ -3,6 +3,12 @@
 
 #include <iostream>
 using namespace std;
+/// <summary>
+/// Ham kiem tra so nguyen to 
+/// </summary>
+/// <param name="so can kiem tra"></param>
+/// <True la so nguyen to>
+/// <false la ko phai so nguyen to>
 bool kiemtrasonguyen(int s) {
 	int dem = 0;
 	for (int i = 1; i <= s; i++)
@@ -25,21 +31,7 @@ int main() {
 	for (int r = 1; r <= n; r++) {
 		if (kiemtrasonguyen(r) == true) cout << r << " ";
 	}
-	/*
-	for (int i = 1; i <= n; i++)
-	{
-		if (n % i == 0) {
-			dem++;
-
-		}
-	}
-	//cout << "so dem =" << dem << endl;
-	if (dem == 2) {
-		cout << "So " << n << " la so nguyen to\n";
-	}
-	else{
-		cout << "So " << n << " khong phai la so nguyen to\n";
-	}*/
+	
 	return 0;
 
 }
